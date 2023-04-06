@@ -8,11 +8,13 @@ import About from "./Components/About/About";
 import Header from "./Components/Header/Header";
 import Books from "./Components/Books/Books";
 import BookDitails from "./Components/BookDetilas/BookDitails";
+import Error from "./Components/Error/Error";
 
 const router =createBrowserRouter([
   {
   path:'/',
   element:<App></App>,
+  errorElement:<Error></Error>,
   children:[
     {
       path:'/',
